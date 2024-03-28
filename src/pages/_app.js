@@ -1,20 +1,13 @@
 import "@/styles/globals.css";
-import ThemeProvider from "@/utils/ThemeProvider";
-import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+// import ThemeProvider from "@/utils/ThemeProvider";
+import { ThemeProvider } from 'next-themes';
+
 
 export default function App({ Component, pageProps }) {
-  const queryClient = new QueryClient({
-    defaultOptions: {
-      refetchOnWindowFocus: false,
-    },
-  });
+
   return (
-    <ThemeProvider>
-      <QueryClientProvider client={queryClient}>
+         <ThemeProvider attribute="class">
         <Component {...pageProps} />
-        <ReactQueryDevtools />
-      </QueryClientProvider>
-    </ThemeProvider>
+        </ThemeProvider>
   );
 }

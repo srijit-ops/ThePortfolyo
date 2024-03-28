@@ -1,4 +1,4 @@
-import { themeContext } from "@/utils/ThemeProvider";
-import { useContext } from "react";
+// import { themeContext } from "@/utils/ThemeProvider";
+// import { useContext } from "react";
 
-export const useTheme= ()=> useContext(themeContext)
+// export const useTheme= ()=> useContext(themeContext)
