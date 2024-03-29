@@ -13,9 +13,9 @@ function BlurImage({src, alt, height, width, priority, layout, objectFit, classN
       alt={alt}
       height={height}
       width={width}
-      priority={priority}
+    //   priority={priority}
       layout={layout}
-      objectFit={objectFit || 'cover'}
+    //   objectFit={objectFit || 'cover'}
       className={cn(
         className,
         'duration-700 ease-in-out',
