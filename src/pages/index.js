@@ -36,7 +36,7 @@ export default function Home({data}) {
         <link rel='shortcut icon' href='/letter-r.png' type='image/x-icon' />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Caveat&display=swap" rel="stylesheet"/>
       </Head>
       <main
       className={`flex h-screen p-8 bg-white dark:bg-black`}

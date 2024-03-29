@@ -12,3 +12,6 @@
 body{
     font-family: "Poppins", sans-serif;
 }
+.mrl-container{
+    background-color: rgba(100, 100, 100, 0.05);
+}
