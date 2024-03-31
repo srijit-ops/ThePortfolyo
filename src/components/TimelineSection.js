@@ -9,12 +9,12 @@ function TimelineSection({timelineData}) {
     <div className="w-full my-10">
       <Heading name={"Timeline."} />
       <div>
-        <div>
-            <p>Education</p>
+        <div className='my-4'>
+            <p className='text-4xl font-semibold text-[#FF69B4] tracking-wider overflow-hidden font-[Caveat]'>Education :</p>
             <TimelineCard data={educationData}/>
         </div>
-        <div>
-            <p>Experience</p>
+        <div className='my-4'>
+            <p className='text-4xl font-semibold text-[#FF69B4] tracking-wider overflow-hidden font-[Caveat]'>Experience :</p>
             <TimelineCard data={workData}/>
         </div>
       </div>

@@ -6,4 +6,11 @@
   
   .button:hover svg {
     @apply translate-x-0;
+    stroke: white;
+  }
+.button:hover span{
+    @apply text-white;
+}
+  .button::before{
+    background: linear-gradient(45deg, #00ccff, #d400d4);
   }
