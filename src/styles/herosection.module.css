@@ -13,6 +13,15 @@
     animation: morph 8s ease-in-out infinite;
     aspect-ratio: 1/1;
   }
+  .box::before{
+    background: linear-gradient(315deg, #00ccff, #d400d4); 
+    @apply animate-[animate_4s_linear_infinite];
+  }
+
+  .box:hover .content img {
+    @apply opacity-0;
+  }
+
   @keyframes noise-anim {
     0% {
       clip-path: inset(76% 0px 21%);
@@ -156,3 +165,20 @@
       border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
   }
+  @keyframes animate{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  /* .box::after{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #162052;
+    border-radius: 50%;
+    z-index: 1;
+  } */
+  

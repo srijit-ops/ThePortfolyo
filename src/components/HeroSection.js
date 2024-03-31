@@ -3,6 +3,7 @@ import React from 'react'
 import Styles from "../styles/herosection.module.css"
 import MatrixRainingLetters from './matrixrain/MatrixRainingLetters'
 import BlurImage from './BlurImage'
+import Button from './common/Button'
 
 function HeroSection({heroData}) {
     console.log(heroData)
@@ -14,12 +15,28 @@ function HeroSection({heroData}) {
                 </h1>
             <h4 className='mt-7 font-[Caveat] font-semibold text-5xl text-[#FF69B4] overflow-y-hidden tracking-wider'>A {heroData.title}</h4>
             <p className='mt-8 text-lg text-gray-700 tracking-wider dark:text-[#94949c]'>{heroData.subTitle}.</p>
+            <Button name={"Let's connect"}/>
         </div>
         <div className='w-5/12 relative'>
-            {/* <img src={heroData.avatar.url} alt='main-avatar' className='w-14 h-30'/> */}
+            
+            <div className={`${Styles.box} relative w-full h-[550px] rounded-[50%] overflow-y-hidden before:absolute before:content-[' '] before:inset-[-10px_100px] before:transition-[0.3s] hover:before:inset-[-20px_0px]`}>
+              <div className={`${Styles.content} z-[3] rounded-[50%] absolute overflow-hidden flex justify-center items-center flex-col inset-3`}>
+                  <img src={heroData.avatar.url} className='absolute top-0 left-0 w-full h-full z-[3] object-cover transition-[0.5s]'/>
+                  <div className={`${Styles.quote} relative flex overflow-y-hidden`}>
+                    <div className='absolute text-4xl text-white top-[0] left-[0] overflow-y-hidden'>❝</div>
+                    <div>
+                    <h4 className='text-white mt-2 text-3xl font-[Caveat]'>
+                        {heroData.quote}
+                    </h4>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+
             
             {/* <MatrixRainingLetters key="foo-bar" custom_class={`overflow-y-hidden w-full relative h-full`}/> */}
-            <div className={'w-full relative h-[650px]'}>
+            {/* <div className={'w-full relative h-[650px]'}>
               <div className={`${Styles.morph} w-full absolute top-1/2 transform -translate-y-1/2 bg-gradient-to-br from-blue-300 to-pink-400 rounded-[60% 40% 30% 70%]/[60% 30% 70% 40%]`}></div>
               <h1 className='text-9xl absolute z-[1000] bottom-[7%] right-0 overflow-y-hidden'>&lt;/&gt;</h1>
               <span className='box-border block overflow-hidden w-full h-[500px] bg-none opacity-100 border-0 m-0 p-0 absolute top-[10%] left-0 bottom-0 right-0 rounded-[50%]'>
@@ -35,7 +52,7 @@ function HeroSection({heroData}) {
               
               </span>
               
-              </div>
+              </div> */}
             {/* <div className='flex justify-center items-center absolute z-50 top-[10%] w-full'>
             <img src={heroData.avatar.url} className='w-25 h-60'/>
             </div> */}
