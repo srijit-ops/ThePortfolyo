@@ -7,6 +7,8 @@ import { useState } from "react";
 import Head from "next/head";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import SkillSection from "@/components/SkillSection";
+import TimelineSection from "@/components/TimelineSection";
 
 
 export default function Home({data}) {
@@ -40,13 +42,15 @@ export default function Home({data}) {
 <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Caveat&display=swap" rel="stylesheet"/>
       </Head>
       <main
-      className={`h-screen py-8 px-20 bg-white dark:bg-black`}
+      className={`h-screen py-8 px-28 bg-white dark:bg-black`}
     >
       <HeroSection heroData={data.user.about}/>
          <div onClick={()=>setTheme(theme==="light"?"dark":"light")}>
           <p className="dark:font-semibold">toggle</p>
          </div>
         <AboutSection aboutData={data.user.about}/>
+        <SkillSection skillData= {data.user.skills}/>
+        <TimelineSection timelineData={data.user.timeline}/>
     </main>
     </>
     
