@@ -4,6 +4,7 @@ import Styles from "../styles/herosection.module.css"
 import MatrixRainingLetters from './matrixrain/MatrixRainingLetters'
 import BlurImage from './BlurImage'
 import Button from './common/Button'
+import Image from 'next/image'
 
 function HeroSection({heroData}) {
     console.log(heroData)
@@ -11,7 +12,7 @@ function HeroSection({heroData}) {
     <div className='flex justify-between items-center flex-wrap w-full'>
         <div className={`${Styles.name_holder} w-6/12`}>
             <h1 className={`relative text-7xl opacity-100 transform-none font-bold overflow-y-hidden tracking-[0.6rem] before:left-0.5 after:-left-0.5 before:absolute after:absolute before:top-0 after:top-0 before:w-full after:w-full before:h-full after:h-full before:content-[attr(before)] after:content-[attr(after)]`} before={`I'M ${heroData.name.toUpperCase()},`} after={`I'M ${heroData.name.toUpperCase()},`}>
-                <mark className='relative text-black dark:text-white'>I'M {heroData.name.toUpperCase()},</mark>
+                <mark className='relative text-black dark:text-white'>I&apos;M {heroData.name.toUpperCase()},</mark>
                 </h1>
             <h4 className='mt-7 font-[Caveat] font-semibold text-5xl text-[#FF69B4] overflow-y-hidden tracking-wider'>A {heroData.title}</h4>
             <p className='mt-8 text-lg text-gray-700 tracking-wider dark:text-[#94949c]'>{heroData.subTitle}.</p>
@@ -21,7 +22,7 @@ function HeroSection({heroData}) {
             
             <div className={`${Styles.box} relative w-full h-[540px] rounded-[50%] overflow-y-hidden before:absolute before:content-[' '] before:inset-[-10px_100px] before:transition-[0.3s] hover:before:inset-[-20px_0px]`}>
               <div className={`${Styles.content} z-[3] rounded-[50%] absolute overflow-hidden flex justify-center items-center flex-col inset-3`}>
-                  <img src={heroData.avatar.url} className='absolute top-0 left-0 w-full h-full z-[3] object-cover transition-[0.5s]'/>
+                  <Image src={heroData.avatar.url} className='absolute top-0 left-0 w-full h-full z-[3] object-cover transition-[0.5s]'/>
                   <div className={`${Styles.quote} relative flex overflow-y-hidden`}>
                     <div className='absolute text-4xl text-white top-[0] left-[0] overflow-y-hidden'>❝</div>
                     <div>
@@ -54,7 +55,7 @@ function HeroSection({heroData}) {
               
               </div> */}
             {/* <div className='flex justify-center items-center absolute z-50 top-[10%] w-full'>
-            <img src={heroData.avatar.url} className='w-25 h-60'/>
+            <Image src={heroData.avatar.url} className='w-25 h-60'/>
             </div> */}
         </div>
     </div>

@@ -1,4 +1,5 @@
 // import Image from 'next/image';
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 function cn(...classes) {
@@ -8,7 +9,7 @@ function cn(...classes) {
 function BlurImage({src, alt, height, width, priority, layout, objectFit, className}) {
 
   return (
-    <img
+    <Image
       src={src}
       alt={alt}
       height={height}

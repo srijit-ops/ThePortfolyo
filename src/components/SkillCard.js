@@ -8,6 +8,7 @@ import "react-circular-progressbar/dist/styles.css";
 import GradientSVG from "./common/GradientSVG";
 import { useTheme } from "next-themes";
 import ProgressProvider from "./common/ProgressProvider";
+import Image from "next/image";
 
 const gradientId = "hello";
 const gradientTransform = "rotate(90)";
@@ -48,7 +49,7 @@ function SkillCard({ skill, percentage, logo, enabled }) {
                   {percentage}%
                 </p>
               ) : (
-                <img src={logo} alt={skill} height={"100%"} width={"100%"} />
+                <Image src={logo} alt={skill} height={"100%"} width={"100%"} />
               )}
             </div>
           </CircularProgressbarWithChildren>
