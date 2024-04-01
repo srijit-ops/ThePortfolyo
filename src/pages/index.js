@@ -10,6 +10,8 @@ import AboutSection from "@/components/AboutSection";
 import SkillSection from "@/components/SkillSection";
 import TimelineSection from "@/components/TimelineSection";
 import TestimonialSection from "@/components/TestimonialSection";
+import ServiceSection from "@/components/ServiceSection";
+import ProjectSection from "@/components/ProjectSection";
 
 
 export default function Home({data}) {
@@ -51,6 +53,8 @@ export default function Home({data}) {
          </div>
         <AboutSection aboutData={data.user.about}/>
         <SkillSection skillData= {data.user.skills}/>
+        <ServiceSection serviceData={data.user.services}/>
+        <ProjectSection projectData={data.user.projects}/>
         <TimelineSection timelineData={data.user.timeline}/>
         <TestimonialSection testimonialData={data.user.testimonials}/>
     </main>
