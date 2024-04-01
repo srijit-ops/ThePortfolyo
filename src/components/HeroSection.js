@@ -22,7 +22,9 @@ function HeroSection({heroData}) {
             
             <div className={`${Styles.box} relative w-full h-[540px] rounded-[50%] overflow-y-hidden before:absolute before:content-[' '] before:inset-[-10px_100px] before:transition-[0.3s] hover:before:inset-[-20px_0px]`}>
               <div className={`${Styles.content} z-[3] rounded-[50%] absolute overflow-hidden flex justify-center items-center flex-col inset-3`}>
-                  <Image src={heroData.avatar.url} className='absolute top-0 left-0 w-full h-full z-[3] object-cover transition-[0.5s]'/>
+              <div className={`${Styles.img_container} w-full`}>
+                  <Image src={heroData.avatar.url} layout='fill' alt='avatar' className={`absolute top-0 left-0 w-full h-full z-[3] object-cover transition-[0.5s] ${Styles.img}`}/>
+                  </div>
                   <div className={`${Styles.quote} relative flex overflow-y-hidden`}>
                     <div className='absolute text-4xl text-white top-[0] left-[0] overflow-y-hidden'>❝</div>
                     <div>

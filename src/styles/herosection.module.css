@@ -1,3 +1,13 @@
+.img_container div {
+  position: unset !important;
+}
+
+.img {
+  width: 100% !important;
+  /* position: relative !important; */
+  height: 100% !important; /* height was unset previously */
+}
+
 .name_holder mark {
     background: none 0px 80% / 100% 0.3em no-repeat;
   }

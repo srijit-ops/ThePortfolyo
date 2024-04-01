@@ -8,7 +8,7 @@
   .timeline_event_icon {
     transform: rotate 45deg;
     background: linear-gradient(45deg, #00ccff, #d400d4);
-    outline: 10px solid;
+    /* outline: 10px solid; */
   }
   .timeline_event_thumbnail {
     @apply shadow-[inset_0_0_0_0em_#ef795a];

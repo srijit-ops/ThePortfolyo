@@ -9,6 +9,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import SkillSection from "@/components/SkillSection";
 import TimelineSection from "@/components/TimelineSection";
+import TestimonialSection from "@/components/TestimonialSection";
 
 
 export default function Home({data}) {
@@ -51,6 +52,7 @@ export default function Home({data}) {
         <AboutSection aboutData={data.user.about}/>
         <SkillSection skillData= {data.user.skills}/>
         <TimelineSection timelineData={data.user.timeline}/>
+        <TestimonialSection testimonialData={data.user.testimonials}/>
     </main>
     </>
     

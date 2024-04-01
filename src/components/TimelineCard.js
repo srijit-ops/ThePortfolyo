@@ -15,7 +15,7 @@ function TimelineCard({data}) {
             return (
               <React.Fragment key={Math.random()}>
                 <li className={`${Styles.timeline_event} relative`}>
-                  <label className={`${Styles.timeline_event_icon} left-4 w-4 h-4 top-0 absolute block m-2 -ml-2 transition-transform duration-200 ease-in outline-white dark:outline-black`}></label>
+                  <label className={`${Styles.timeline_event_icon} left-4 w-4 h-4 top-0 absolute block m-2 -ml-2 transition-transform duration-200 ease-in outline-white dark:outline-black outline-[10px] outline`}></label>
                   <div className={`${Styles.timeline_event_copy} p-8 relative w-4/5 left-16 -top-7`}>
                     <p className={`${Styles.timeline_event_thumbnail} text-white inline-block mb-5 transition-shadow duration-500 ease-in delay-100 px-4 py-1`}>
                       {/* {work.timeLine} */}{formatDate(work.startDate)}-{formatDate(work.endDate)}

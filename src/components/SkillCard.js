@@ -9,6 +9,7 @@ import GradientSVG from "./common/GradientSVG";
 import { useTheme } from "next-themes";
 import ProgressProvider from "./common/ProgressProvider";
 import Image from "next/image";
+import Styles from "../styles/skills.module.css"
 
 const gradientId = "hello";
 const gradientTransform = "rotate(90)";
@@ -49,7 +50,9 @@ function SkillCard({ skill, percentage, logo, enabled }) {
                   {percentage}%
                 </p>
               ) : (
-                <Image src={logo} alt={skill} height={"100%"} width={"100%"} />
+                <div className={`${Styles.img_container} w-full`}>
+                <Image src={logo} alt={skill} layout='fill' className={`${Styles.img}`}/>
+                </div>
               )}
             </div>
           </CircularProgressbarWithChildren>
