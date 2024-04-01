@@ -1,0 +1,9 @@
+.img_container div {
+    position: unset !important;
+  }
+
+  .img {
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
