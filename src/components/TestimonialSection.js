@@ -50,7 +50,7 @@ function TestimonialSection({testimonialData}) {
             delay: 2500,
             disableOnInteraction: false,
           }}
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Autoplay]}
         className="pt-6"
       >
         {testimonialData.map((item, index) => {

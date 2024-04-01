@@ -2,8 +2,8 @@ import React from 'react'
 
 function TestimonialCard({enabled, name, img, quote, position}) {
   return (
-    <section className={`p-8 ${enabled? "block":"hidden"} h-full mb-8 bg-white dark:bg-black`}>
-        <div className="h-full mx-auto my-0 max-w-[800px] shadow-lg border border-solid border-gray-200 dark:border-gray-800 rounded-xl">
+    <section className={`p-8 ${enabled? "block":"hidden"} h-full mb-8 bg-white dark:bg-black cursor-pointer`}>
+        <div className="h-full mx-auto my-0 max-w-[800px] shadow-lg hover:shadow-xl border border-solid border-gray-200 dark:border-gray-800 rounded-xl hover:scale-105">
             <div className="h-full relative flex flex-row min-h-[250px] rounded-xl">
                 <div className={`absolute w-[5.6rem] h-[5.6rem] bg-cover rounded-[50%] left-[2.8rem] top-20  bg-no-repeat bg-center`} style={{backgroundImage:`url(${img})`}}></div>
                 <div className={`absolute text-[4rem] text-gray-300 dark:text-gray-400 select-none left-[7.5rem] top-[1.3rem] bg-transparent`}>

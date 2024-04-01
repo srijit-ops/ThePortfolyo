@@ -3,16 +3,6 @@
 @tailwind utilities;
 
 
-:root {
-    --bulletbackground: #00ccff;
-    --swipercolor: #171717;
-  }
-  
-  [data-theme="dark"] {
-    --bulletbackground: white;
-    --swipercolor: white;
-  }
-
 *{
     /* overflow-x: hidden; */
     margin: 0;
@@ -41,17 +31,24 @@ body{
     align-items: center;
     height: auto!important;
   }
-  .mySwiper .swiper-wrapper{
+  .swiper-wrapper{
     padding-top: 1.5rem;
+    margin-bottom: 2.5rem;
     /* overflow-x: scroll; */
   }
   .swiper-button-prev, .swiper-button-next {
-    color: var(--swipercolor)!important; /* Change the color of the arrow icon */
+    color: #171717!important; /* Change the color of the arrow icon */
+  }
+  .dark .swiper-button-prev, .dark .swiper-button-next{
+    color: white!important;
   }
   .swiper-button-prev:after, .swiper-button-next:after {
     font-size: 1.4rem!important;
     font-weight: bold;
   }
   .swiper-pagination-bullet{
-    background: var(--bulletbackground)!important;
+    background: #1a50f5!important;
+  }
+  .dark .swiper-pagination-bullet{
+    background: white!important;
   }
