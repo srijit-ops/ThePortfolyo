@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+    --bulletbackground: #00ccff;
+    --swipercolor: #171717;
+  }
+  
+  [data-theme="dark"] {
+    --bulletbackground: white;
+    --swipercolor: white;
+  }
+
 *{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,3 +26,32 @@ body{
 .mrl-container{
     background-color: rgba(100, 100, 100, 0.05);
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto!important;
+  }
+  .mySwiper .swiper-wrapper{
+    padding-top: 1.5rem;
+    /* overflow-x: scroll; */
+  }
+  .swiper-button-prev, .swiper-button-next {
+    color: var(--swipercolor)!important; /* Change the color of the arrow icon */
+  }
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 1.4rem!important;
+    font-weight: bold;
+  }
+  .swiper-pagination-bullet{
+    background: var(--bulletbackground)!important;
+  }
