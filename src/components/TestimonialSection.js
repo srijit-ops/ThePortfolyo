@@ -1,6 +1,7 @@
 import React from 'react'
 import Heading from './common/Heading'
 import TestimonialCard from './TestimonialCard'
+import Styles from "../styles/testimonial.module.css"
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,7 +15,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 function TestimonialSection({testimonialData}) {
   return (
-    <div className="w-full my-10 px-28">
+    <div className="w-full my-20 lg:px-28 md:px-16 sm:px-8 px-5">
         <Heading name={"Testimonials."} />
         <Swiper
         slidesPerView={2}
@@ -29,7 +30,7 @@ function TestimonialSection({testimonialData}) {
           },
           // When screen width is 1024px or more
           1024: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           // When screen width is 1280px or more
           1280: {

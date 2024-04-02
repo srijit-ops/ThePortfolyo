@@ -4,7 +4,7 @@ import Heading from "./common/Heading";
 
 function SkillSection({ skillData }) {
   return (
-    <div className="w-full my-10 px-28">
+    <div className="w-full my-20 lg:px-28 md:px-16 sm:px-8 px-5">
       <Heading name={"My Skills."} />
       <div className="flex justify-between items-center flex-wrap flex-row mt-14">
         {[...skillData]
@@ -13,7 +13,7 @@ function SkillSection({ skillData }) {
             return (
               <div
                 key={index}
-                className="w-[9%] mx-6 mb-9 flex justify-center items-center"
+                className="xl:w-[9%]  md:w-[15%] sm:w-[35%] w-[35%] mx-6 mb-9 flex justify-center items-center"
               >
                 <SkillCard
                   skill={item.name}

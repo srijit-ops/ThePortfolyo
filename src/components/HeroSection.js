@@ -9,8 +9,8 @@ import Image from 'next/image'
 function HeroSection({heroData}) {
     console.log(heroData)
   return (
-    <div className='flex justify-between items-center flex-wrap w-full px-28'>
-        <div className={`${Styles.name_holder} w-6/12`}>
+    <div className='flex xl:justify-between lg:justify-center justify-center items-center flex-wrap w-full lg:px-28 sm:px-8 px-5 md:px-16 relative my-12'>
+        <div className={`${Styles.name_holder} xl:w-6/12 lg:w-full w-full mb-7 xl:mb-0`}>
             <h1 className={`relative text-7xl opacity-100 transform-none font-bold overflow-hidden tracking-[0.6rem] before:left-0.5 after:-left-0.5 before:absolute after:absolute before:top-0 after:top-0 before:w-full after:w-full before:h-full after:h-full before:content-[attr(before)] after:content-[attr(after)]`} before={`I'M ${heroData.name.toUpperCase()},`} after={`I'M ${heroData.name.toUpperCase()},`}>
                 <mark className='relative text-black dark:text-white'>I&apos;M {heroData.name.toUpperCase()},</mark>
                 </h1>
@@ -18,7 +18,7 @@ function HeroSection({heroData}) {
             <p className='mt-8 text-lg text-gray-700 tracking-wider dark:text-[#94949c]'>{heroData.subTitle}.</p>
             <Button name={"Let's connect"}/>
         </div>
-        <div className='w-5/12 relative'>
+        <div className='xl:w-5/12 lg:w-4/5 w-4/5 relative'>
             
             <div className={`${Styles.box} relative w-full h-[540px] rounded-[50%] overflow-hidden before:absolute before:content-[' '] before:inset-[-10px_100px] before:transition-[0.3s] hover:before:inset-[-20px_0px]`}>
               <div className={`${Styles.content} z-[3] rounded-[50%] absolute overflow-hidden flex justify-center items-center flex-col inset-3`}>
@@ -26,9 +26,9 @@ function HeroSection({heroData}) {
                   <Image src={heroData.avatar.url} layout='fill' alt='avatar' className={`absolute top-0 left-0 w-full h-full z-[3] object-cover transition-[0.5s] ${Styles.img}`}/>
                   </div>
                   <div className={`${Styles.quote} relative flex overflow-y-hidden`}>
-                    <div className='absolute text-4xl text-white top-[0] left-[0] overflow-y-hidden'>❝</div>
+                    <div className='absolute text-5xl text-white top-[0] left-[0] overflow-y-hidden'>❝</div>
                     <div>
-                    <h4 className='text-white mt-2 text-3xl font-[Caveat]'>
+                    <h4 className='text-white mt-6 text-3xl'>
                         {heroData.quote}
                     </h4>
                     </div>

@@ -14,6 +14,7 @@ import ServiceSection from "@/components/ServiceSection";
 import ProjectSection from "@/components/ProjectSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 
 export default function Home({data}) {
@@ -50,19 +51,17 @@ export default function Home({data}) {
         
       </Head>
       <main
-      className={`h-screen py-8  bg-white dark:bg-black`}
+      className={`pb-8  bg-white dark:bg-black relative`}
     >
+      <Header name={data.user.about.name}/>
       <HeroSection heroData={data.user.about}/>
-         <div onClick={()=>setTheme(theme==="light"?"dark":"light")}>
-          <p className="dark:font-semibold">toggle</p>
-         </div>
         <AboutSection aboutData={data.user.about}/>
         <SkillSection skillData= {data.user.skills}/>
         <ServiceSection serviceData={data.user.services}/>
         <ProjectSection projectData={data.user.projects}/>
         <TimelineSection timelineData={data.user.timeline}/>
         <TestimonialSection testimonialData={data.user.testimonials}/>
-        <ContactSection email={data.user.email} location={data.user.about.address} phone={data.user.about.phoneNumber}/>
+        <ContactSection email={data.user.about.contactEmail} location={data.user.about.address} phone={data.user.about.phoneNumber}/>
         <Footer socials={data.user.social_handles}/>
     </main>
     </>
