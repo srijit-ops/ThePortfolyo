@@ -48,8 +48,8 @@ export default function Home({ data }) {
         <Header name={data.user.about.name} />
         <HeroSection heroData={data.user.about} />
         <AboutSection aboutData={data.user.about} />
-        <SkillSection skillData={data.user.skills} />
         <ServiceSection serviceData={data.user.services} />
+        <SkillSection skillData={data.user.skills} />
         <ProjectSection projectData={data.user.projects} />
         <TimelineSection timelineData={data.user.timeline} />
         <TestimonialSection testimonialData={data.user.testimonials} />
