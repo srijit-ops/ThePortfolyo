@@ -7,9 +7,3 @@
     position: relative !important;
     height: unset !important;
   }
-
-  /* @media (max-width: 450px) {
-    .workCard {
-      width: 27rem;
-    }
-  } */

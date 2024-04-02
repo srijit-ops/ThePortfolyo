@@ -29,11 +29,7 @@ function CustomModal({
           borderRadius: 10,
           background: theme === "dark" ? "#363636" : "white",
         },
-        // closeIcon: { background: "red" },
       }}
-      // classNames={{
-      //   modal: `${Styles.customModal}`,
-      // }}
     >
       <div className={`bg-white dark:bg-[#363636] p-6`}>
         <div

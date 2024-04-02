@@ -1,23 +1,19 @@
-import React from 'react'
-import Heading from './common/Heading'
-import TestimonialCard from './TestimonialCard'
-import Styles from "../styles/testimonial.module.css"
-// Import Swiper React components
+import React from "react";
+import Heading from "./common/Heading";
+import TestimonialCard from "./TestimonialCard";
+import Styles from "../styles/testimonial.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// import required modules
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-function TestimonialSection({testimonialData}) {
+function TestimonialSection({ testimonialData }) {
   return (
     <div className="w-full my-20 lg:px-28 md:px-16 sm:px-8 px-5">
-        <Heading name={"Testimonials."} />
-        <Swiper
+      <Heading name={"Testimonials."} />
+      <Swiper
         slidesPerView={1}
         breakpoints={{
           // When screen width is 640px or more
@@ -44,13 +40,13 @@ function TestimonialSection({testimonialData}) {
         spaceBetween={30}
         navigation={true}
         pagination={{
-            clickable: true,
-          }}
+          clickable: true,
+        }}
         loop={true}
         autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         modules={[Navigation, Pagination, Autoplay]}
         className="pt-6"
       >
@@ -68,15 +64,8 @@ function TestimonialSection({testimonialData}) {
           );
         })}
       </Swiper>
-        {/* {
-            testimonialData.map((item, index)=>{
-                return(
-                    
-                )
-            })
-        } */}
     </div>
-  )
+  );
 }
 
-export default TestimonialSection
+export default TestimonialSection;

@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 import Styles from "../styles/button.module.css";
 
 function ProjectSection({ projectData }) {
-  const {theme} = useTheme();
+  const { theme } = useTheme();
   const techs = [];
   const [selectedTechStacks, setSelectedTechStacks] = useState([]);
   const [open, setOpen] = useState(false);
@@ -56,10 +56,13 @@ function ProjectSection({ projectData }) {
         </p>
       </div>
       <div className="flex justify-between items-center flex-wrap">
-        {console.log(filteredProjects, "filter")}
+        {/* {console.log(filteredProjects, "filter")} */}
         {filteredProjects.map((item, index) => {
           return (
-            <div key={index} className="xl:w-1/4 lg:w-5/12 sm:w-5/12 w-full m-3">
+            <div
+              key={index}
+              className="xl:w-1/4 lg:w-5/12 sm:w-5/12 w-full m-3"
+            >
               <ProjectCard
                 name={item.title}
                 img={item.image.url}

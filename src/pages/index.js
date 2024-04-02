@@ -1,7 +1,5 @@
-import { usePortfolioData } from "@/hooks/portfolioData.hooks";
 import { getPortfolioData } from "@/requests/portfolioDataRequest.requests";
 import { useTheme } from 'next-themes';
-// import { useTheme } from "@/hooks/themeContext.hooks";
 import Image from "next/image";
 import { useState } from "react";
 import Head from "next/head";
@@ -20,29 +18,29 @@ import Header from "@/components/Header";
 export default function Home({data}) {
 
   const [loading, setLoading] = useState(false)
-  console.log(data, 'prop check')
+  // console.log(data, 'prop check')
   const { theme, setTheme } = useTheme();
 
-  console.log(theme, setTheme, "context check")
+  // console.log(theme, setTheme, "context check")
   
   return (
     <>
       <Head>
-        <title>John Doe | Sofware Developer</title>
-        <meta property='og:title' content='John Doe Portfolio' />
+        <title>{data.user.about.name}</title>
+        <meta property='og:title' content={data.user.about.name} />
         <meta
           property='og:image'
-          content='https://i.ibb.co/2s1tktd/Avatar.png'
+          content={data.user.about.avatar.url}
         />
         <meta
           property='og:description'
-          content='As a React developer with 5 years of experience, I have honed my skills in JavaScript and am currently learning TypeScript to expand my expertise. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively with clients to create efficient and scalable solutions. My focus is on developing user-friendly applications that solve real-world problems.'
+          content={data.user.about.subTitle}
         />
         <meta
           name='description'
-          content='As a React developer with 5 years of experience, I have honed my skills in JavaScript and am currently learning TypeScript to expand my expertise. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively with clients to create efficient and scalable solutions. My focus is on developing user-friendly applications that solve real-world problems.'
+          content={data.user.about.subTitle}
         ></meta>
-        <link rel='shortcut icon' href='/letter-r.png' type='image/x-icon' />
+        <link rel='shortcut icon' href={data.user.about.avatar.url} type='image/x-icon' />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Caveat&display=swap" rel="stylesheet"/>

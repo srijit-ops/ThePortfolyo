@@ -4,8 +4,7 @@
 
 .img {
   width: 100% !important;
-  /* position: relative !important; */
-  height: 100% !important; /* height was unset previously */
+  height: 100% !important;
 }
 
 .name_holder mark {
@@ -183,21 +182,4 @@
       transform: rotate(360deg);
     }
   }
-  /* .box::after{
-    content: '';
-    position: absolute;
-    inset: 6px;
-    background: #162052;
-    border-radius: 50%;
-    z-index: 1;
-  } */
-  /* @media (max-width:1379px) {
-    .box{
-      height: 440px;
-    }
-  }
-  @media (max-width:1379px) {
-    .box{
-      height: 440px;
-    }
-  } */
+ 

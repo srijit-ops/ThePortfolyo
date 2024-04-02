@@ -2,8 +2,6 @@
     stroke-linecap: round;
     stroke-linejoin: round;
   }
-  
-  
   .button:hover svg {
     @apply translate-x-0;
     stroke: white;

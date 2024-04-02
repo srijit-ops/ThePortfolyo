@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 
 const ProgressProvider = ({ valueStart, valueEnd, children }) => {
   const [value, setValue] = useState(valueStart);
