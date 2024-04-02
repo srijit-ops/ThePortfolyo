@@ -18,17 +18,17 @@ function HeroSection({heroData}) {
             <p className='mt-8 sm:text-lg text-base text-gray-700 tracking-wider dark:text-[#94949c]'>{heroData.subTitle}.</p>
             <Button name={"Let's connect"}/>
         </div>
-        <div className='xl:w-5/12 lg:w-4/5 w-4/5 relative'>
+        <div className='xl:w-5/12 lg:w-4/5 w-4/5 relative flex justify-center items-center'>
             
-            <div className={`${Styles.box} relative w-full h-[540px] rounded-[50%] overflow-hidden before:absolute before:content-[' '] before:inset-[-10px_100px] before:transition-[0.3s] hover:before:inset-[-20px_0px]`}>
+            <div className={`${Styles.box} relative 2xl:w-[540px]  2xl:h-[540px] xl:w-[430px] xl:h-[430px] lg:w-[500px] lg:h-[500px] w-[240px] h-[240px]  rounded-[50%] overflow-hidden before:absolute before:content-[' '] before:inset-[-10px_100px] before:transition-[0.3s] hover:before:inset-[-20px_0px]`}>
               <div className={`${Styles.content} z-[3] rounded-[50%] absolute overflow-hidden flex justify-center items-center flex-col inset-3`}>
               <div className={`${Styles.img_container} w-full`}>
                   <Image src={heroData.avatar.url} layout='fill' alt='avatar' className={`absolute top-0 left-0 w-full h-full z-[3] object-cover transition-[0.5s] ${Styles.img}`}/>
                   </div>
                   <div className={`${Styles.quote} relative flex overflow-y-hidden`}>
-                    <div className='absolute text-5xl text-white top-[0] left-[0] overflow-y-hidden'>❝</div>
+                    <div className='absolute xl:text-5xl lg:text-4xl sm:text-2xl text-xl text-white top-[0] left-[0] overflow-y-hidden'>❝</div>
                     <div>
-                    <h4 className='text-white mt-6 text-3xl'>
+                    <h4 className='text-white mt-6 xl:text-3xl lg:text-2xl sm:text-lg text-base'>
                         {heroData.quote}
                     </h4>
                     </div>

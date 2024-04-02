@@ -195,4 +195,9 @@
     .box{
       height: 440px;
     }
+  }
+  @media (max-width:1379px) {
+    .box{
+      height: 440px;
+    }
   } */
