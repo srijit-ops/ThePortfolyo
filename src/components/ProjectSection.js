@@ -12,7 +12,7 @@ function ProjectSection({projectData}) {
             .sort((a, b) => a.sequence - b.sequence)
             .map((item, index)=>{
                 return(
-                    <div key={index} className='w-2/6'>
+                    <div key={index} className='w-1/4 m-3'>
                         <ProjectCard name={item.title} img={item.image.url} tech={item.techStack} detail={item.description} liveUrl={item.liveurl} github={item.githuburl} enabled-={item.enabled} sequence={item.sequence}/>
                         </div>
                 )

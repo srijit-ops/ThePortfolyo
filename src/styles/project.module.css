@@ -7,3 +7,19 @@
     position: relative !important;
     height: unset !important;
   }
+  .card {
+  }
+  .card_img {
+}
+.card_box {
+  background: linear-gradient(45deg, #00ccff, #d400d4);
+  clip-path: polygon(0 20px, 20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+  translate: none; rotate: none; scale: none; 
+}
+.card:hover .card_box{
+  @apply opacity-100 translate-x-0 translate-y-0;
+}
+.card:hover .card_img{
+  filter: grayscale(80%);
+  transform: scale(1.1, 1.1);
+}
