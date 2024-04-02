@@ -18,7 +18,7 @@ function TestimonialSection({testimonialData}) {
     <div className="w-full my-20 lg:px-28 md:px-16 sm:px-8 px-5">
         <Heading name={"Testimonials."} />
         <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         breakpoints={{
           // When screen width is 640px or more
           640: {

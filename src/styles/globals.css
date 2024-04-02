@@ -52,3 +52,14 @@ body{
   .dark .swiper-pagination-bullet{
     background: white!important;
   }
+  @media (max-width:640px) {
+    .swiper{
+      overflow-x: scroll!important;
+    }
+    .swiper::-webkit-scrollbar {
+      display: none!important;
+  }
+    .swiper-button-prev, .swiper-button-next{
+      opacity: 0!important;
+    }
+  }

@@ -10,11 +10,11 @@ function TimelineSection({timelineData}) {
       <Heading name={"Timeline."} />
       <div>
         <div className='my-4'>
-            <p className='text-4xl font-semibold text-[#FF69B4] tracking-wider overflow-hidden font-[Caveat]'>Education :</p>
+            <p className='sm:text-4xl text-3xl font-semibold text-[#FF69B4] tracking-wider overflow-hidden font-[Caveat]'>Education :</p>
             <TimelineCard data={educationData}/>
         </div>
         <div className='my-4'>
-            <p className='text-4xl font-semibold text-[#FF69B4] tracking-wider overflow-hidden font-[Caveat]'>Experience :</p>
+            <p className='sm:text-4xl text-3xl font-semibold text-[#FF69B4] tracking-wider overflow-hidden font-[Caveat]'>Experience :</p>
             <TimelineCard data={workData}/>
         </div>
       </div>

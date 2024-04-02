@@ -1,17 +1,18 @@
 import React from 'react'
+import Styles from "../styles/testimonial.module.css"
 
 function TestimonialCard({enabled, name, img, quote, position}) {
   return (
-    <section className={`p-8 ${enabled? "block":"hidden"} h-full mb-8 bg-white dark:bg-black cursor-pointer`}>
+    <section className={`p-8 sm:px-8 px-2 ${enabled? "block":"hidden"} h-full mb-8 bg-white dark:bg-black cursor-pointer`}>
         <div className="h-full mx-auto my-0 max-w-[800px] shadow-lg hover:shadow-xl border border-solid border-gray-200 dark:border-gray-800 rounded-xl hover:scale-105 transition-all duration-[0.3s]">
-            <div className="h-full relative flex flex-row min-h-[250px] rounded-xl">
-                <div className={`absolute w-[5.6rem] h-[5.6rem] bg-cover rounded-[50%] left-[2.8rem] top-20  bg-no-repeat bg-center`} style={{backgroundImage:`url(${img})`}}></div>
-                <div className={`absolute text-[4rem] text-gray-300 dark:text-gray-400 select-none left-[7.5rem] top-[1.3rem] bg-transparent`}>
+            <div className={`h-full relative flex flex-row min-h-[250px] rounded-xl ${Styles.paul}`}>
+                <div className={`${Styles.userpic} absolute sm:w-[5.6rem] sm:h-[5.6rem] w-[3.5rem] h-[3.5rem] bg-cover rounded-[50%] left-[2.8rem] top-20  bg-no-repeat bg-center`} style={{backgroundImage:`url(${img})`}}></div>
+                <div className={`${Styles.qmark} absolute sm:text-[4rem] text-3xl text-gray-300 dark:text-gray-400 select-none sm:left-[7.5rem]  sm:top-[1.3rem] bg-transparent`}>
                     &#10077;
                 </div>
-                <div className="basis-20 rounded-tr-none rounded-br-none rounded-tl-xl rounded-bl-xl bg-gradient-to-b from-[#d400d4] to-[#00ccff]">
+                <div className={`sm:basis-20 rounded-tr-none rounded-br-none rounded-tl-xl rounded-bl-xl bg-gradient-to-b from-[#d400d4] to-[#00ccff] ${Styles.pattern}`}>
                 </div>
-                <div className="basis-[calc(100%_-_80px)] text-base leading-[1.62rem] bg-white dark:bg-[#363636] pl-20 pr-[1.9rem] py-10 rounded-[0_0.75rem_0.75rem_0]">
+                <div className={`${Styles.base} sm:basis-[calc(100%_-_80px)]  text-base leading-[1.62rem] bg-white dark:bg-[#363636] pl-20 pr-[1.9rem] py-10 rounded-[0_0.75rem_0.75rem_0]`}>
                     <blockquote className="dark:text-gray-300 text-left" cite="">
                         {quote}
                     </blockquote>
@@ -30,17 +31,3 @@ function TestimonialCard({enabled, name, img, quote, position}) {
 
 export default TestimonialCard
 
-// @media screen and (max-width: 768px) {
-//     .t-bq-quote-paul .t-bq-quote-paul-pattern {
-//       @apply basis-[1.3rem];
-//     }
-//     .t-bq-quote-paul .t-bq-quote-paul-base {
-//       @apply basis-[calc(100%_-_20px)] pt-[6.25rem] pb-[3.125rem] px-[1.875rem];
-//     }
-//     .t-bq-quote-paul .t-bq-quote-paul-userpic {
-//       @apply w-[3.125rem] h-[3.125rem] left-10 top-[1.3rem];
-//     }
-//     .t-bq-quote-paul .t-bq-quote-paul-qmark {
-//       @apply left-[6.25rem] top-[2.8rem];
-//     }
-//   }

@@ -1,11 +1,14 @@
-@media (max-width:640px) {
-    .swiper{
-      overflow-x: scroll!important;
-    }
-    .swiper::-webkit-scrollbar {
-      display: none!important;
-  }
-    .swiper-button-prev, .swiper-button-next{
-      opacity: 0!important;
-    }
-  }
+ @media screen and (max-width: 640px) {
+         .paul .pattern {
+           @apply basis-[1.3rem];
+         }
+         .paul .base {
+           @apply basis-[calc(100%_-_20px)] pt-[6.25rem] pb-[3.125rem] px-[1.875rem];
+         }
+         .paul .userpic {
+           @apply w-[3.125rem] h-[3.125rem] left-10 top-[1.3rem];
+         }
+         .paul .qmark {
+           @apply left-[6.25rem] top-[2.8rem];
+         }
+       }

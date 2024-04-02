@@ -11,11 +11,11 @@ function HeroSection({heroData}) {
   return (
     <div className='flex xl:justify-between lg:justify-center justify-center items-center flex-wrap w-full lg:px-28 sm:px-8 px-5 md:px-16 relative my-12'>
         <div className={`${Styles.name_holder} xl:w-6/12 lg:w-full w-full mb-7 xl:mb-0`}>
-            <h1 className={`relative text-7xl opacity-100 transform-none font-bold overflow-hidden tracking-[0.6rem] before:left-0.5 after:-left-0.5 before:absolute after:absolute before:top-0 after:top-0 before:w-full after:w-full before:h-full after:h-full before:content-[attr(before)] after:content-[attr(after)]`} before={`I'M ${heroData.name.toUpperCase()},`} after={`I'M ${heroData.name.toUpperCase()},`}>
+            <h1 className={`relative sm:text-7xl text-4xl opacity-100 transform-none font-bold overflow-hidden tracking-[0.6rem] before:left-0.5 after:-left-0.5 before:absolute after:absolute before:top-0 after:top-0 before:w-full after:w-full before:h-full after:h-full before:content-[attr(before)] after:content-[attr(after)]`} before={`I'M ${heroData.name.toUpperCase()},`} after={`I'M ${heroData.name.toUpperCase()},`}>
                 <mark className='relative text-black dark:text-white'>I&apos;M {heroData.name.toUpperCase()},</mark>
                 </h1>
-            <h4 className='mt-7 font-[Caveat] font-semibold text-5xl text-[#FF69B4] overflow-y-hidden tracking-wider'>A {heroData.title}</h4>
-            <p className='mt-8 text-lg text-gray-700 tracking-wider dark:text-[#94949c]'>{heroData.subTitle}.</p>
+            <h4 className='mt-7 font-[Caveat] font-semibold sm:text-5xl text-3xl text-[#FF69B4] overflow-y-hidden tracking-wider'>A {heroData.title}</h4>
+            <p className='mt-8 sm:text-lg text-base text-gray-700 tracking-wider dark:text-[#94949c]'>{heroData.subTitle}.</p>
             <Button name={"Let's connect"}/>
         </div>
         <div className='xl:w-5/12 lg:w-4/5 w-4/5 relative'>

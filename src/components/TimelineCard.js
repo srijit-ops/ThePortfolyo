@@ -16,12 +16,12 @@ function TimelineCard({data}) {
               <React.Fragment key={Math.random()}>
                 <li className={`${Styles.timeline_event} relative`}>
                   <label className={`${Styles.timeline_event_icon} left-4 w-4 h-4 top-0 absolute block m-2 -ml-2 transition-transform duration-200 ease-in outline-white dark:outline-black outline-[10px] outline`}></label>
-                  <div className={`${Styles.timeline_event_copy} p-8 relative w-4/5 left-16 -top-7`}>
+                  <div className={`${Styles.timeline_event_copy} p-8 sm:px-8 px-1 relative w-4/5 left-16 -top-7`}>
                     <p className={`${Styles.timeline_event_thumbnail} text-white inline-block mb-5 transition-shadow duration-500 ease-in delay-100 px-4 py-1`}>
                       {/* {work.timeLine} */}{formatDate(work.startDate)}-{formatDate(work.endDate)}
                     </p>
-                    <h1 className={"text-3xl tracking-wider text-[#3d4351] font-semibold overflow-y-hidden dark:text-white"}>{work.jobTitle}</h1>
-                    <h1 className={"text-xl text-[#2c3e50] my-5 dark:text-[#94949c]"}>{work.company_name}</h1>
+                    <h1 className={"sm:text-3xl text-xl tracking-wider text-[#3d4351] font-semibold overflow-y-hidden dark:text-white"}>{work.jobTitle}</h1>
+                    <h1 className={"sm:text-2xl text-lg text-[#2c3e50] my-5 dark:text-[#94949c]"}>{work.company_name}</h1>
                     <p className='text-gray-700 dark:text-gray-300 pb-5'>{work.summary}</p>
                     <ul>
                         {
