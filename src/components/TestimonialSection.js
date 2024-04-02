@@ -14,7 +14,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 function TestimonialSection({testimonialData}) {
   return (
-    <div className="w-full my-10">
+    <div className="w-full my-10 px-28">
         <Heading name={"Testimonials."} />
         <Swiper
         slidesPerView={2}

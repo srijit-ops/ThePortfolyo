@@ -9,7 +9,7 @@ import Image from 'next/image'
 function HeroSection({heroData}) {
     console.log(heroData)
   return (
-    <div className='flex justify-between items-center flex-wrap w-full'>
+    <div className='flex justify-between items-center flex-wrap w-full px-28'>
         <div className={`${Styles.name_holder} w-6/12`}>
             <h1 className={`relative text-7xl opacity-100 transform-none font-bold overflow-hidden tracking-[0.6rem] before:left-0.5 after:-left-0.5 before:absolute after:absolute before:top-0 after:top-0 before:w-full after:w-full before:h-full after:h-full before:content-[attr(before)] after:content-[attr(after)]`} before={`I'M ${heroData.name.toUpperCase()},`} after={`I'M ${heroData.name.toUpperCase()},`}>
                 <mark className='relative text-black dark:text-white'>I&apos;M {heroData.name.toUpperCase()},</mark>

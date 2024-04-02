@@ -13,6 +13,7 @@ import TestimonialSection from "@/components/TestimonialSection";
 import ServiceSection from "@/components/ServiceSection";
 import ProjectSection from "@/components/ProjectSection";
 import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 
 export default function Home({data}) {
@@ -49,7 +50,7 @@ export default function Home({data}) {
         
       </Head>
       <main
-      className={`h-screen py-8 px-28 bg-white dark:bg-black`}
+      className={`h-screen py-8  bg-white dark:bg-black`}
     >
       <HeroSection heroData={data.user.about}/>
          <div onClick={()=>setTheme(theme==="light"?"dark":"light")}>
@@ -62,6 +63,7 @@ export default function Home({data}) {
         <TimelineSection timelineData={data.user.timeline}/>
         <TestimonialSection testimonialData={data.user.testimonials}/>
         <ContactSection email={data.user.email} location={data.user.about.address} phone={data.user.about.phoneNumber}/>
+        <Footer socials={data.user.social_handles}/>
     </main>
     </>
     

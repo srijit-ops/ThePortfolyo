@@ -4,7 +4,7 @@ import Heading from "./common/Heading";
 
 function SkillSection({ skillData }) {
   return (
-    <div className="w-full my-10">
+    <div className="w-full my-10 px-28">
       <Heading name={"My Skills."} />
       <div className="flex justify-between items-center flex-wrap flex-row mt-14">
         {[...skillData]

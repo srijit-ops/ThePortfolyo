@@ -6,7 +6,7 @@ import Styles from "../styles/aboutsection.module.css"
 
 function AboutSection({aboutData}) {
   return (
-    <div className='w-full my-10'>
+    <div className='w-full my-10 px-28'>
         <Heading name={"About Me."}/>
 <div className='flex justify-between items-center flex-wrap w-full mt-11'>
          <div className={`w-3/12`}>

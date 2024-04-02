@@ -4,7 +4,7 @@ import Heading from './common/Heading'
 
 function ProjectSection({projectData}) {
   return (
-    <div className="w-full my-10">
+    <div className="w-full my-10 px-28">
         <Heading name={"Projects."} />
         <div className='flex justify-between items-center flex-wrap'>
         {

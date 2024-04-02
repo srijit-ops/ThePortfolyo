@@ -9,8 +9,8 @@ function ContactDetail({email, location, phone}) {
             <i class="fa-solid fa-location-dot text-white text-lg"></i>
             </div>
             <div>
-                <p className='text-gray-500 tracking-wide'>Location</p>
-                <p className='text-xl font-semibold text-gray-950 tracking-wide mt-3'>{location}</p>
+                <p className='text-gray-500 dark:text-gray-300 tracking-wide'>Location</p>
+                <p className='text-xl font-semibold text-gray-950 tracking-wide mt-3 dark:text-white'>{location}</p>
             </div>
         </div>
         <div className='flex justify-start items-start flex-row mb-8'>
@@ -18,8 +18,8 @@ function ContactDetail({email, location, phone}) {
             <i class="fa-solid fa-phone text-white text-lg"></i>
             </div>
             <div>
-                <p className='text-gray-500 tracking-wide'>Phone</p>
-                <p className='text-xl font-semibold text-gray-950 tracking-wide mt-3'>{phone}</p>
+                <p className='text-gray-500 dark:text-gray-300 tracking-wide'>Phone</p>
+                <p className='text-xl font-semibold text-gray-950 tracking-wide mt-3  dark:text-white'>{phone}</p>
             </div>
         </div>
         <div className='flex justify-start items-start flex-row mb-8'>
@@ -27,8 +27,8 @@ function ContactDetail({email, location, phone}) {
             <i class="fa-solid fa-envelope text-white text-lg"></i>
             </div>
             <div>
-                <p className='text-gray-500 tracking-wide'>Mail</p>
-                <p className='text-xl font-semibold text-gray-950 tracking-wide mt-3'>{email}</p>
+                <p className='text-gray-500 dark:text-gray-300  tracking-wide'>Mail</p>
+                <p className='text-xl font-semibold text-gray-950 tracking-wide mt-3  dark:text-white'>{email}</p>
             </div>
         </div>
     </div>
